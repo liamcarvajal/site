@@ -24,6 +24,12 @@ body {
   flex-direction: column;
 }
 
+@media screen and (max-width: 767px){
+  body {
+     margin: 2rem;
+  }
+ }
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

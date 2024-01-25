@@ -1,6 +1,7 @@
 //import React from "react";
 import Header from "../components/Header";
 import { About, Projects, Contact } from "../pages";
+import { Fade } from "react-awesome-reveal";
 
 function Home() {
   return (
@@ -8,13 +9,19 @@ function Home() {
       <div>
         <Header />
         <section className="section-about">
-          <About />
+          <Fade duration="1500">
+            <About />
+          </Fade>
         </section>
         <section className="section-projects">
-          <Projects />
+          <Fade>
+            <Projects />
+          </Fade>
         </section>
         <section className="section-contact">
-          <Contact />
+          <Fade>
+            <Contact />
+          </Fade>
         </section>
       </div>
     </>

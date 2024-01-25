@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta id="ascii" name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liam Carvajal</title>
+    <title>Liam Carvajal | Software Engineer</title>
     <link rel="icon" href="/src/assets/favicon.ico" />
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://liamcarvajal.com">
   </head>
   <body>
     <div id="root" class="root"></div>
@@ -114,7 +115,6 @@ createRenderer() {
 
 onWindowResize(){
   this.camera.aspect = this.container.clientWidth / this.container.clientHeight;
-  this.camera.updateProjectionMatrix();
   this.renderer.setSize( this.container.clientWidth, this.container.clientHeight );
 }
 }
@@ -138,11 +138,11 @@ constructor( scene, font, particleImg, camera, renderer ) {
 
   this.data = {
     text: 'LIAM CARVAJAL',
-    amount: 2000,
+    amount: 1500,
     particleSize: 1,
     particleColor: 0xffffff,
     textSize: 16,
-    area: 450,
+    area: 250,
     ease: 1,
   }
 
@@ -535,12 +535,10 @@ function onWindowResize() {
     <!-- preloader -->
     <div class="website-content">
       <div class="header">
-        <div class="h1">
           <h2 class="header1">HELLO, MY NAME IS</h2>
           <h2 class="header2">FULL-STACK SOFTWARE ENGINEER</h2>
           <div id="hideMe" class="revealer1"></div>
           <div id="hideMe" class="revealer2"></div>
-        </div>
       </div>
     </div>
     <div class="loading-screen">

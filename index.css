@@ -8,9 +8,29 @@
   left: 0;
   z-index: -9999;
 }
+@media screen and (max-width: 400px){
+  #magic {
+      opacity: 0;
+  }
+ }
 
 .root {
   width: 100%;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  background-color: transparent;
+}
+::-webkit-scrollbar{
+  overflow: overlay;
+  width:8px;
+}
+::-webkit-scrollbar-thumb{
+  overflow: overlay;
+  height:56px;
+  background:transparent;
+  border: 1px solid white;
+  border-radius: 1rem;
 }
 
 ::selection {

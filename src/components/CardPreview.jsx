@@ -7,7 +7,7 @@ import { motion, animate, AnimatePresence } from "framer-motion";
 import { IoClose } from "react-icons/io5";
 import Taglist from "./Taglist";
 
-function CardPreview({ data, key }) {
+function CardPreview({ data }) {
   const { title, subtitle, description, tags, image } = data;
   const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);

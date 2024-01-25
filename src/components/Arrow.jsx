@@ -39,14 +39,14 @@ function Arrow() {
           xmlns="http://www.w3.org/2000/svg"
           xmlns:svg="http://www.w3.org/2000/svg"
         >
-          <g class="layer">
+          <g className="layer">
             <g id="svg_4">
               <rect
                 fill="#ffffff"
                 height="0.97"
                 id="svg_1"
                 stroke="#000000"
-                stroke-width="0"
+                strokeWidth="0"
                 transform="matrix(0.965926 0.258819 -0.258819 0.965926 13.0441 -37.4162)"
                 width="168"
                 x="36.4"
@@ -57,7 +57,7 @@ function Arrow() {
                 height="0.97"
                 id="svg_3"
                 stroke="#000000"
-                stroke-width="0"
+                strokeWidth="0"
                 transform="rotate(-15 281.071 32.5697)"
                 width="168"
                 x="197.07"

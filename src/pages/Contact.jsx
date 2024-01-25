@@ -42,28 +42,7 @@ function Contact() {
           <Form />
         </section>
       </div>
-      <div className="divider">
-        <svg
-          width="1470"
-          height="20"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:svg="http://www.w3.org/2000/svg"
-        >
-          <g class="layer">
-            <title>Layer 1</title>
-            <rect
-              fill="#ffffff"
-              height="0.37"
-              id="svg_3"
-              stroke="#000000"
-              stroke-width="0"
-              width="1447"
-              x="11.5"
-              y="9.51"
-            />
-          </g>
-        </svg>
-      </div>
+      <div className="divider"></div>
       <div className="footer">
         <p className="text">Liam Carvajal ©2024 | liam.carvajal@gmail.com</p>
       </div>
