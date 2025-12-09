@@ -3,7 +3,7 @@ import "./Components.css";
 import Word from "./Word";
 
 const paragraph =
-  "I was gifted my first computer at an early age. Since then, I've been captivated by technology and its boundless possibilities. Now, I'm a second-year student at Northeastern University studying computer science with a concentration in software. My passion lies in building challenging, well-designed projects and advancing my understanding of software development.";
+  "I’ve been obsessed with computers since I received my first one as a kid, and that curiosity eventually led me to study computer science at Northeastern. I’m especially drawn to software because I love building projects that solve real problems and push me to learn new skills. Right now, I’m focusing on developing well-designed, reliable systems and constantly improving how I build and think about software.";
 
 export default function AboutText() {
   return (

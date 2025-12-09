@@ -1,17 +1,29 @@
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    align-items: start;
+    gap: 80px 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 80px 0 0 0;
+    width: 100%;
+    min-height: calc(180px * 2 + 80px);
 }
 
 @media screen and (max-width: 767px){
     .card-container {
         margin-top: 32px !important;
+        gap: 8px;
     }
    }
 
 .page {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .about-section {
@@ -91,3 +103,46 @@
 .text {
     margin: 0;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.pagination-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0;
+    outline: none;
+}
+
+.pagination-dot:focus {
+    outline: none;
+}
+
+.pagination-dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.pagination-dot.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 767px){
+    .pagination {
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+   }

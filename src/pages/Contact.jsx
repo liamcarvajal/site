@@ -1,6 +1,6 @@
 //import React from 'react'
 import Form from "../components/Form";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Contact() {
@@ -29,22 +29,13 @@ function Contact() {
                 <FaGithub color="white" fontSize="2em" />
               </Link>
             </li>
-            <li className="logo">
-              <Link
-                to="https://www.instagram.com/liam_carvajal/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram color="white" fontSize="2em" />
-              </Link>
-            </li>
           </ul>
           <Form />
         </section>
       </div>
       <div className="divider"></div>
       <div className="footer">
-        <p className="text">Liam Carvajal ©2024 | liam.carvajal@gmail.com</p>
+        <p className="text">Liam Carvajal ©2026 | liam.carvajal@gmail.com</p>
       </div>
     </>
   );
