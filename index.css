@@ -17,6 +17,11 @@
 .root {
   width: 100%;
 }
+
+html {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: none !important;
   background-color: transparent;
@@ -36,4 +41,22 @@
 ::selection {
   background: #fff;
   color: #000;
+}
+
+/* Preloading state - lock scroll and hide scrollbar against white background */
+html.preloading,
+html.preloading body {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+html.preloading::-webkit-scrollbar-track,
+html.preloading body::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+html.preloading::-webkit-scrollbar-thumb,
+html.preloading body::-webkit-scrollbar-thumb {
+  background: white;
+  border: 1px solid white;
 }

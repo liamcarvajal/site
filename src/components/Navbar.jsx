@@ -27,6 +27,7 @@ function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-50}
           >
             ABOUT
           </Link>
@@ -39,6 +40,7 @@ function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-50}
           >
             PROJECTS
           </Link>
@@ -51,6 +53,7 @@ function Navbar() {
             spy={true}
             smooth={true}
             duration={500}
+            offset={-50}
           >
             CONTACT
           </Link>

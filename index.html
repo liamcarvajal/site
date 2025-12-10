@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" id="home">
+<html lang="en" id="home" class="preloading">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -580,6 +580,18 @@ function onWindowResize() {
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
+      // Lock scroll during preload
+      function lockScroll(e) {
+        window.scrollTo(0, 0);
+      }
+      window.addEventListener('scroll', lockScroll);
+      
+      // Remove scroll lock after preload (7.5s)
+      setTimeout(function() {
+        window.removeEventListener('scroll', lockScroll);
+        document.documentElement.classList.remove('preloading');
+      }, 7500);
+
       document.addEventListener("DOMContentLoaded", function () {
         const counter3 = document.querySelector(".counter-3");
 
